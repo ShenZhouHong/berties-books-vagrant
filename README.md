@@ -37,12 +37,26 @@ Next, we must install the Vagrant provisioning tool. More detailed [operating sy
 
 #### For Ubuntu and Debian
 
+On Ubuntu and Debian, we may install Virtualbox and Vagrant in one step using apt:
+
 ```bash
 sudo apt update
 sudo apt install -y vagrant virtualbox
 ```
 
 #### For Mac OS
+
+For Mac OS, we must first install Virtualbox **verison 6.1**. It is very important to *not* install Virtualbox 7.0, as Vagrant does not support it on Mac OS machines. 
+
+Visit the Virtualbox 6.1 builds page at the link below:
+
+* [Virtualbox 6.1 Builds](https://www.virtualbox.org/wiki/Download_Old_Builds_6_1)
+
+Click on the link that says **OS X Hosts**. This should initialise a download. Install Virtualbox using the package file inside the `.dmg`.
+
+After installation, you may have to open your Security Settings, and allow Kernel drivers for Mac OS to be installed. To do so, navigate to your Preferences > Security & Privacy Setting, and follow the on-screen instructions.
+
+Once Virtualbox is properly installed, we may install Vagrant with Homebrew:
 
 ```zsh
 brew install vagrant
