@@ -8,6 +8,11 @@ In order to do so, this project makes use of Vagrant, a tool which is used to de
 ## Setup
 In order to use this project, first clone the repository onto your local machine.
 
+```
+git clone https://github.com/ShenZhouHong/berties-books-vagrant.git
+cd berties-books-vagrant
+```
+
 
 ### Define secrets in `.env` file
 
