@@ -11,6 +11,9 @@ apt-get install -y nodejs npm mysql-server
 cd /vagrant/
 npm install
 
+# Ensure that the  MySQL service is started. This is an alias for systemctl start mysql
+service mysql start
+
 # Configure MYSQL
 # First we set root password
 echo "Configuring root password for MYSQL"
